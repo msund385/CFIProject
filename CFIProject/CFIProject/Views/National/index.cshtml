@@ -1,0 +1,38 @@
+﻿@model IEnumerable<National>
+
+<h1>National Resources </h1>
+<br />
+<table class="table table-striped">
+
+    <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Website</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Assistance</th>
+    </tr>
+
+    @foreach (var national in Model)
+    {
+        <tr>
+            <td><a href=/National/ViewNational/@national.ID>@national.ID</a></td>
+            <td>@national.Name</td>
+            <td>@national.Address</td>
+            <td>@national.Website</td>
+            <td>@national.Phone</td>
+            <td>@national.Email</td>
+            <td>@national.Assistance</td>
+
+        </tr>
+    }
+
+
+
+
+
+</table>
+
+

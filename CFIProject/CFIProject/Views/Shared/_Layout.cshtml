@@ -6,8 +6,10 @@
     <title>@ViewData["Title"] - CFIProject</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
-<body>
+<body style="background-color:antiquewhite">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -19,10 +21,25 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home<i class="fas fa-home"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy<i class="fas fa-user-secret"></i></a>
+                        </li>
+                        <li class="nav-item" />
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About<i class="fas fa-eject"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="National" asp-action="index">National<i class="fas fa-flag-usa"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Ohio" asp-action="index">Ohio<i class="fab fa-nutritionix"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact" onclick="C:\Users\Michael\Desktop\CFIProject\CFIProject\CFIProject\CFIProject\Views\Home\Contact.cshtml">Contact<i class="fas fa-address-book"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="KeyFacts" >Key Facts<i class="fa fa-key" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>

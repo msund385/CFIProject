@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OhioModels>
+
+<h1>Ohio Resources</h1>
+<br/>
+<table class="table table-striped ">
+    <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Website</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Assistance</th>
+    </tr>
+
+     @foreach (var ohio in Model)
+     {
+<tr>
+    <td><a href=/Ohio/ViewOhio/@ohio.ohio_ID>@ohio.ohio_ID</a></td>
+   
+    <td>@ohio.ohio_Name</td>
+    <td>@ohio.ohio_Address</td>
+    <td>@ohio.ohio_Website</td>
+    <td>@ohio.ohio_Phone</td>
+    <td>@ohio.ohio_Email</td>
+    <td>@ohio.ohio_Assistance</td>
+</tr>
+     }
+    
+</table>
+    
+
+    
+        
+        
+           
+
+        
